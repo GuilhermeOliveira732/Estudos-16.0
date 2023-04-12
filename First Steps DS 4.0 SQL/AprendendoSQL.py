@@ -47,7 +47,6 @@ for row in acft_regular:
 # criando listas para utilizar os dados para a criação do gráfico
 # que mostrará a proporção entre ocorrências da aviação regular
 # e da aviação geral
-
 keys = [soma_gen, soma_reg]
 labels = ['Geral', 'Regular']
 for key in keys:
@@ -290,7 +289,7 @@ for i in h_gen:
 anos_gen = [d[0] for d in dados_h_gen]
 contagens_gen = [d[1] for d in dados_h_gen]
 
-
+# cria gráfico com as informações
 plt.plot(anos_reg, contagens_reg, color='blue', label="Regular")
 plt.plot(anos_gen, contagens_gen, color='red', label="Geral")
 plt.xlabel('Ano')
